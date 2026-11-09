@@ -80,6 +80,7 @@ description: 离线桌面提效工具（Windows exe + Python 源码、GUI 单入
   可见功能；major 用于不兼容变更。
 - **任何可见改动**（哪怕删一个字、换一个图标）都走完整四步：**升版 → commit → tag →
   重建源码 zip**。纯文档改动也升 patch，保证发出去的 zip 始终等于 HEAD。
+  patch（1.1.x）：修复/微调；minor（1.x.0）：新增可见功能；major：不兼容。
 - 源码 zip 命名 `<工具名>_vX.Y.Z_source.zip`；重建脚本**从 version.py 动态读版本号**
   （硬编码命名必然过期——踩过的坑）。
 - commit message 用 conventional commits + 中文描述
