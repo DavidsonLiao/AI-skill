@@ -64,7 +64,8 @@ description: 离线桌面提效工具（Windows exe + Python 源码、GUI 单入
 | 维度 | 默认选择 | 理由 |
 | --- | --- | --- |
 | GUI | Tkinter | Windows 自带，零额外依赖，PyInstaller 友好 |
-| AI 接入 | 标准库 `urllib` + OpenAI 兼容协议；base_url/模型可配置 | 免第三方 SDK，打包体积小，杀软误报少 |
+| 在线 AI 接入 | 标准库 `urllib` + OpenAI 兼容协议；API Key、URL、模型名可配置 | 免第三方 SDK，打包体积小，杀软误报少 |
+| 本地 AI 接入 | Ollama 启动本地模型；无需 API Key、无需 URL（内置默认本地服务，默认端口 11434） | 数据不出本机，完全离线可用，零账号成本 |
 | 打包 | onedir（**禁 onefile、禁 UPX**） | 启动快；杀软误报显著更少 |
 | 数据格式 | 纯文本优先 | 容错解析、可 diff、可人工检读 |
 | 配置 | JSON，存用户目录 | 简单、可手工编辑 |
