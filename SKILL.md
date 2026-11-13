@@ -113,8 +113,7 @@ description: 离线桌面提效工具（Windows exe + Python 源码、GUI 单入
   **纯 ASCII + CRLF 换行**，交付前逐字节校验。
 - 检测 `python` 命令真伪：`where python` + `python --version` 双重检测（Microsoft
   Store 的占位假命令能骗过一眼检查）。pip 安装失败**自动换国内镜像重试**（如清华源）。
-- 杀软误报是常态：用 onedir + 不 UPX 缓解，并在文档里提前写明白名单指引。
-- 单文件 exe 在部分机器上会闪退——始终整目录分发（`dist/<工具名>/`）。
+- .bat构建的单文件 exe 可独立运行，不依赖记忆。
 
 ### 6.2 GUI 与高 DPI（Windows 150%/175% 缩放实测）
 
